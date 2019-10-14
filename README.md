@@ -171,3 +171,7 @@ https://i.imgur.com/4N50QVz.png
 Now type "yarn dev" and press enter this should appear
 
 https://i.imgur.com/NeRqPqB.png
+
+Head over to here to setup the web server now
+
+https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Web-Installation.md
