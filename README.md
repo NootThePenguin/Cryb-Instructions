@@ -10,16 +10,23 @@ Installing MongoDB
 
 First off we are going to install mongodb (windows)
 https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.2.0-signed.msi/download
+
 Go through the installer, accept agreement and click complete and install mongodb as a service
 https://i.imgur.com/QuiMM1n.png
+
 You dont need to install mongo-compass so you uncheck that and let it install
 
 Once install head over to the directory path installed in this case mine was
+
 C:\Program Files\MongoDB\Server\4.2\bin
+
 https://i.imgur.com/L8FqBj1.png
+
 Click mongod to launch the service a cmd prompt should appear and disappear
 Open up taskmanager and check if its running in this case it is
+
 https://i.imgur.com/0An6wIn.png
+
 -------------------------------------------------------------------------------------
 Installing redis-server
 
@@ -83,20 +90,28 @@ Now open your .env file with notepad++ or notepad doesn't matter
 https://i.imgur.com/DHbJ57m.png
 
 Set NODE_ENV= to development so it should look like NODE_ENV=development
+
 Set the JWT_KEY to anything, example -> "km93m8c928ma90!mif" so JWT_KEY=km93m8c928ma90!mif (make it something complicated) or get something from random.org
+
 Set MONGO_URI= to MONGO_URI=mongodb://localhost:27017/cryb
+
 Leave REDIS_URI= blank as it should connect to localhost 
 
 Now onto the discord stuff!
+
 Head over to https://discordapp.com/developers/applications and click on New Application and name it whatever you want
 https://i.imgur.com/tZ1m6Ba.png
+
 Make sure you are on the General Information tab and get your "CLIENT ID" from there, click copy.
 Paste it into DISCORD_CLIENT_ID=<Your client ID here>
+  
 Get your client secret (DO NOT SHARE!!) from the same page and click copy
 Paste it into DISCORD_CLIENT_SECRET=<Your client secret here> 
-For set DISCORD_CALLBACK_URL to
+  
+For now set DISCORD_CALLBACK_URL to
 DISCORD_CALLBACK_URL=http://localhost:3000/auth/discord
-We will set this up below
+
+We will set this up right now
 
 Head over to the OAuth2 tab and make these Redirects
 https://i.imgur.com/ZpZOdka.png
@@ -108,6 +123,7 @@ DISCORD_OAUTH_ORIGINS=http://localhost:3000/auth/discord,http://localhost:4000/a
 
 Your all set with the .env file it should look like this (My client-id, secret-client is random and should be different from yours):
 https://i.imgur.com/3hmVkbU.png
+
 -------------------------------------------------------------------------------------
 Wrapping things up with the powershell
 
