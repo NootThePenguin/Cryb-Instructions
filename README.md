@@ -8,6 +8,15 @@ Created by William
 I apologies in advanced if the instructions are unclear but if you need help feel free to contact me on discord Noot#420
 
 -------------------------------------------------------------------------------------
+Installing NPM (nodejs)
+-
+
+Link to install (unfortunately can't really give instructions on this but should be straight forward)
+Go through the installer when completed
+
+https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi
+
+-------------------------------------------------------------------------------------
 Installing MongoDB
 -
 
