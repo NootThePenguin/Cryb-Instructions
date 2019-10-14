@@ -5,7 +5,7 @@ https://github.com/crybapp
 
 Created by William
 
-I apologies in advanced if the instructions are unclear but if you need help feel free to contact me on discord Noot#420
+I apologies in advanced if the instructions are unclear but if you need help feel free to contact me on discord Noot#0420
 
 -------------------------------------------------------------------------------------
 Installing NPM (nodejs)
