@@ -7,8 +7,10 @@ I apologies in advanced if the instructions are unclear but if you need help fee
 
 -------------------------------------------------------------------------------------
 Installing MongoDB
+-
 
 First off we are going to install mongodb (windows)
+
 https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.2.0-signed.msi/download
 
 Go through the installer, accept agreement and click complete and install mongodb as a service
@@ -29,6 +31,7 @@ https://i.imgur.com/0An6wIn.png
 
 -------------------------------------------------------------------------------------
 Installing redis-server
+-
 
 Now we are going to install redis-server
 https://github.com/downloads/dmajkic/redis/redis-2.4.5-win32-win64.zip
@@ -54,7 +57,7 @@ Go through the installer, click next etc.
 
 -------------------------------------------------------------------------------------
 Downloading and setting up cryb API
-
+-
 
 Download zips (you could also do git commands but w/e)
 https://github.com/crybapp/api
@@ -80,8 +83,10 @@ https://i.imgur.com/wVnEoho.png
 
 
 For now close your powershell.
+
 -------------------------------------------------------------------------------------
 Editting your .env file
+-
 
 Rename your .env.example folder to .env
 https://i.imgur.com/EKpEnBE.png
@@ -126,6 +131,7 @@ https://i.imgur.com/3hmVkbU.png
 
 -------------------------------------------------------------------------------------
 Wrapping things up with the powershell
+-
 
 If you closed your powershell open it again (look above for reference)
 
