@@ -53,6 +53,7 @@ https://i.imgur.com/NRJbua3.png
 
 -------------------------------------------------------------------------------------
 Installing yarn
+-
 
 Head over to this website to install yarn on your windows computer
 
