@@ -36,25 +36,29 @@ Installing redis-server
 -
 
 Now we are going to install redis-server
+
 https://github.com/downloads/dmajkic/redis/redis-2.4.5-win32-win64.zip
 
 Make a new folder on your desktop call it redis-server 
+
 https://i.imgur.com/ONM4pMm.png
 
 Drag the files onto that new folder
+
 https://i.imgur.com/PU9iCf7.png
 
 Click on the 64bit (assuming you have a 64 bit computer) and click redis-server.exe and allow access
+
 https://i.imgur.com/NRJbua3.png
 
 -------------------------------------------------------------------------------------
 Installing yarn
 
 Head over to this website to install yarn on your windows computer
+
 https://yarnpkg.com/latest.msi
 
 Go through the installer, click next etc.
-
 
 
 -------------------------------------------------------------------------------------
@@ -62,25 +66,32 @@ Downloading and setting up cryb API
 -
 
 Download zips (you could also do git commands but w/e)
+
 https://github.com/crybapp/api
+
 https://github.com/crybapp/web
 
 Make a folder named "cryb" (name can be w/e)
 Move the folders into cryb like this: https://i.imgur.com/nMEVyUu.png
 
 In this case I'm going to rename api-master and web-master folder to api and web 
+
 https://i.imgur.com/e9cRdXe.png
 
 Open up the api folder
+
 https://i.imgur.com/pRDaiHT.png
 
 Shift + Right click and click Open PowerShell window here
+
 https://i.imgur.com/XnTQnZm.png
 
 Type "npm install" in Windows PowerShell
+
 https://i.imgur.com/9yr6j98.png
 
 You should now have a new folder in your api folder called "node_modules" don't touch it
+
 https://i.imgur.com/wVnEoho.png
 
 
@@ -91,9 +102,11 @@ Editting your .env file
 -
 
 Rename your .env.example folder to .env
+
 https://i.imgur.com/EKpEnBE.png
 
 Now open your .env file with notepad++ or notepad doesn't matter
+
 https://i.imgur.com/DHbJ57m.png
 
 Set NODE_ENV= to development so it should look like NODE_ENV=development
@@ -107,6 +120,7 @@ Leave REDIS_URI= blank as it should connect to localhost
 Now onto the discord stuff!
 
 Head over to https://discordapp.com/developers/applications and click on New Application and name it whatever you want
+
 https://i.imgur.com/tZ1m6Ba.png
 
 Make sure you are on the General Information tab and get your "CLIENT ID" from there, click copy.
@@ -121,6 +135,7 @@ DISCORD_CALLBACK_URL=http://localhost:3000/auth/discord
 We will set this up right now
 
 Head over to the OAuth2 tab and make these Redirects
+
 https://i.imgur.com/ZpZOdka.png
 
 Now for the last line! 
@@ -129,6 +144,7 @@ Here your going to want to paste all the redirect URLS you made (with commas and
 DISCORD_OAUTH_ORIGINS=http://localhost:3000/auth/discord,http://localhost:4000/auth/discord,http://localhost/auth/discord
 
 Your all set with the .env file it should look like this (My client-id, secret-client is random and should be different from yours):
+
 https://i.imgur.com/3hmVkbU.png
 
 -------------------------------------------------------------------------------------
@@ -138,7 +154,9 @@ Wrapping things up with the powershell
 If you closed your powershell open it again (look above for reference)
 
 Type yarn to confirm the installation of yarn
+
 https://i.imgur.com/4N50QVz.png
 
 Now type "yarn dev" and press enter this should appear
+
 https://i.imgur.com/NeRqPqB.png
