@@ -178,21 +178,21 @@ https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Web-Installation
 by lolaustin
 
 
-#### Installing Node
+### Installing Node
 
 Follow the installer on this link - https://nodejs.org/dist/v12.12.0/node-v12.12.0.pkg
 
-#### Installing Homebrew (skip if already installed)
+### Installing Homebrew (skip if already installed)
 
  run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` in terminal/your command line of choice.
  
  
- #### Installing yarn
+ ### Installing yarn
  
  run `brew install yarn`
  
  
- #### Installing the Cryb API on your machine
+ ### Installing the Cryb API on your machine
  
  Create a folder wherever you desire, and call it "Cryb"
  
@@ -203,7 +203,7 @@ Then in the command line/terminal, run `https://github.com/crybapp/api.git`
 When that is done, you should see a new folder called api in your cryb folder.
 
 
-#### Installing MongoDB and Redis (databases)
+### Installing MongoDB and Redis (databases)
 
 If you're already cd'd into your cryb folder, run `cd api`
 If you aren't, run `cd {path to your cryb folder}/api`
@@ -216,12 +216,12 @@ When you have mongoDB installed, run `brew install redis` to install redis.
 
 and run `npm install redis-server` to install redis-server
 
-#### Installing the required dependencies
+### Installing the required dependencies
 
 Make sure you're still cd'd into your api folder, then run `yarn`
 
 
-#### Editing your ENV
+### Editing your ENV
 
 To edit your ENV, go into finder and find your `cryb/api` folder.
 
@@ -251,7 +251,7 @@ Now, go back to your .env file and as `DISCORD_CALLBACK_URL=` put `http://localh
 
 **SAVE YOUR .ENV**
 
-#### Starting MongoDB and Redis
+### Starting MongoDB and Redis
 
 make sure you cd'd into cryb api folder
 
@@ -266,7 +266,7 @@ then run `cd`
 run `mongod --dbpath <path to your cryb/api/data/db folder>` and a long thing of logs should formulate and mongodb is started, don't close the window.
 
 
-#### Running the API
+### Running the API
 
 To run your api, make sure you cd'd into cryb api folder, and run the command `yarn dev`
 
