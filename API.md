@@ -1,5 +1,5 @@
 # CrybAPI-Instructions 
-Windows and Mac 
+Windows and Mac (Unix coming soon..)
 
 https://github.com/crybapp
 
@@ -20,57 +20,57 @@ Link to install (unfortunately can't really give instructions on this but should
 
 Go through the installer when completed
 
-https://nodejs.org/dist/v10.16.3/node-v10.16.3-x64.msi
+[Install Recommended Node Here (npm)](https://nodejs.org/en/)
 
 -------------------------------------------------------------------------------------
 #### Installing MongoDB
 
 
-First off we are going to install mongodb (windows)
+First off we are going to install MongoDB (windows)
 
-https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.2.0-signed.msi/download
+[Install MongoDB Here](https://www.mongodb.com/dr/fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-4.2.0-signed.msi/download)
 
 Go through the installer, accept agreement and click complete and install mongodb as a service
-https://i.imgur.com/QuiMM1n.png
+![img](https://i.imgur.com/QuiMM1n.png)
 
 You dont need to install mongo-compass so you uncheck that and let it install
 
 Once install head over to the directory path installed in this case mine was
 
-C:\Program Files\MongoDB\Server\4.2\bin
+`C:\Program Files\MongoDB\Server\4.2\bin`
 
-https://i.imgur.com/L8FqBj1.png
+![img2](https://i.imgur.com/L8FqBj1.png)
 
-Click mongod to launch the service a cmd prompt should appear and disappear
+Click MongoDB to launch the service a cmd prompt should appear and disappear
 Open up taskmanager and check if its running in this case it is
 
-https://i.imgur.com/0An6wIn.png
+![img3](https://i.imgur.com/0An6wIn.png)
 
 -------------------------------------------------------------------------------------
 #### Installing redis-server
 
 Now we are going to install redis-server
 
-https://github.com/downloads/dmajkic/redis/redis-2.4.5-win32-win64.zip
+[Install Redis-server here](https://github.com/downloads/dmajkic/redis/redis-2.4.5-win32-win64.zip)
 
 Make a new folder on your desktop call it redis-server 
 
-https://i.imgur.com/ONM4pMm.png
+![img4](https://i.imgur.com/ONM4pMm.png)
 
 Drag the files onto that new folder
 
-https://i.imgur.com/PU9iCf7.png
+![img5](https://i.imgur.com/PU9iCf7.png)
 
 Click on the 64bit (assuming you have a 64 bit computer) and click redis-server.exe and allow access
 
-https://i.imgur.com/NRJbua3.png
+![img6](https://i.imgur.com/NRJbua3.png)
 
 -------------------------------------------------------------------------------------
 #### Installing yarn
 
 Head over to this website to install yarn on your windows computer
 
-https://yarnpkg.com/latest.msi
+[Install latest version of Yarn here](https://yarnpkg.com/latest.msi)
 
 Go through the installer, click next etc.
 
@@ -85,27 +85,27 @@ https://github.com/crybapp/api
 https://github.com/crybapp/web
 
 Make a folder named "cryb" (name can be w/e)
-Move the folders into cryb like this: https://i.imgur.com/nMEVyUu.png
+Move the folders into cryb like this: ![img7](https://i.imgur.com/nMEVyUu.png)
 
 In this case I'm going to rename api-master and web-master folder to api and web 
 
-https://i.imgur.com/e9cRdXe.png
+![img8](https://i.imgur.com/e9cRdXe.png)
 
 Open up the api folder
 
-https://i.imgur.com/pRDaiHT.png
+![img9](https://i.imgur.com/pRDaiHT.png)
 
 Shift + Right click and click Open PowerShell window here
 
-https://i.imgur.com/XnTQnZm.png
+![img10](https://i.imgur.com/XnTQnZm.png)
 
-Type "npm install" in Windows PowerShell
+Type `npm install` in Windows PowerShell
 
-https://i.imgur.com/9yr6j98.png
+![img10-5](https://i.imgur.com/9yr6j98.png)
 
 You should now have a new folder in your api folder called "node_modules" don't touch it
 
-https://i.imgur.com/wVnEoho.png
+![img11](https://i.imgur.com/wVnEoho.png)
 
 
 For now close your powershell.
@@ -113,68 +113,72 @@ For now close your powershell.
 -------------------------------------------------------------------------------------
 #### Editting your .env file
 
-Rename your .env.example folder to .env
+Rename your .env.example to .env in your powershell prompt by typing ren ".env.example" ".env"
 
-https://i.imgur.com/EKpEnBE.png
+![img11-5](https://i.imgur.com/KIWP2R9.png)
+
+Your file should now be renamed to .env
+
+![img12](https://i.imgur.com/EKpEnBE.png)
 
 Now open your .env file with notepad++ or notepad doesn't matter
 
-https://i.imgur.com/DHbJ57m.png
+![img13](https://i.imgur.com/DHbJ57m.png)
 
-Set NODE_ENV= to development so it should look like NODE_ENV=development
+Set `NODE_ENV=` to development so it should look like `NODE_ENV=development`
 
-Set the JWT_KEY to anything, example -> "km93m8c928ma90!mif" so JWT_KEY=km93m8c928ma90!mif (make it something complicated) or get something from random.org
+Set `JWT_KEY=` to anything example, "km93m8c928ma90!mif" so `JWT_KEY=km93m8c928ma90!mif` (make it something complicated) or get something from random.org
 
-Set MONGO_URI= to MONGO_URI=mongodb://localhost:27017/cryb
+Set `MONGO_URI=` to `MONGO_URI=mongodb://localhost:27017/cryb`
 
-Leave REDIS_URI= blank as it should connect to localhost 
+Leave `REDIS_URI=` blank as it should connect to localhost 
 
 Now onto the discord stuff!
 
 Head over to https://discordapp.com/developers/applications and click on New Application and name it whatever you want
 
-https://i.imgur.com/tZ1m6Ba.png
+![img14](https://i.imgur.com/tZ1m6Ba.png)
 
 Make sure you are on the General Information tab and get your "CLIENT ID" from there, click copy.
-Paste it into DISCORD_CLIENT_ID=<Your client ID here>
+Paste it into `DISCORD_CLIENT_ID=<Your client ID here>`
   
 Get your client secret (DO NOT SHARE!!) from the same page and click copy
-Paste it into DISCORD_CLIENT_SECRET=<Your client secret here> 
+Paste it into `DISCORD_CLIENT_SECRET=<Your client secret here> `
   
 For now set DISCORD_CALLBACK_URL to
-DISCORD_CALLBACK_URL=http://localhost:3000/auth/discord
+`DISCORD_CALLBACK_URL=http://localhost:3000/auth/discord`
 
 We will set this up right now
 
 Head over to the OAuth2 tab and make these Redirects
 
-https://i.imgur.com/ZpZOdka.png
+![img15](https://i.imgur.com/ZpZOdka.png)
 
 Now for the last line! 
-DISCORD_OAUTH_ORIGINS=
+`DISCORD_OAUTH_ORIGINS=`
 Here your going to want to paste all the redirect URLS you made (with commas and no spaces so heres an example)
-DISCORD_OAUTH_ORIGINS=http://localhost:3000/auth/discord,http://localhost:4000/auth/discord,http://localhost/auth/discord
+`DISCORD_OAUTH_ORIGINS=http://localhost:3000/auth/discord,http://localhost:4000/auth/discord,http://localhost/auth/discord`
 
 Your all set with the .env file it should look like this (My client-id, secret-client is random and should be different from yours):
 
-https://i.imgur.com/3hmVkbU.png
+![img16](https://i.imgur.com/3hmVkbU.png)
 
 -------------------------------------------------------------------------------------
 #### Wrapping things up with the powershell
 
 If you closed your powershell open it again (look above for reference)
 
-Type yarn to confirm the installation of yarn
+Type `yarn` to confirm the installation of yarn
 
-https://i.imgur.com/4N50QVz.png
+![img17](https://i.imgur.com/4N50QVz.png)
 
-Now type "yarn dev" and press enter this should appear
+Now type `yarn dev` and press enter this should appear
 
-https://i.imgur.com/NeRqPqB.png
+![img18](https://i.imgur.com/NeRqPqB.png)
 
 Head over to here to setup the web server now
 
-https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Web-Installation.md
+[Click here for web server instructions](https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Web-Installation.md)
 
 ------
 
