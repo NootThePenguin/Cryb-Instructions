@@ -157,7 +157,7 @@ Head over to the OAuth2 tab and make these Redirects
 Now for the last line! 
 `DISCORD_OAUTH_ORIGINS=`
 Here your going to want to paste all the redirect URLS you made (with commas and no spaces so heres an example)
-`DISCORD_OAUTH_ORIGINS=http://localhost:3000/auth/discord,http://localhost:4000/auth/discord,http://localhost/auth/discord`
+`DISCORD_OAUTH_ORIGINS=http://localhost:3000`
 
 Your all set with the .env file it should look like this (My client-id, secret-client is random and should be different from yours):
 
@@ -206,7 +206,7 @@ Follow the installer on this link - https://nodejs.org/dist/v12.12.0/node-v12.12
  
 In the command line/terminal, run `cd {path to your folder}`
 
-Then in the command line/terminal, run `https://github.com/crybapp/api.git`
+Then in the command line/terminal, run `git clone https://github.com/crybapp/api.git`
 
 When that is done, you should see a new folder called api in your cryb folder.
 
@@ -221,8 +221,6 @@ Now, we're going to "tap" mongoDB, run `brew tap mongodb/brew`
 Now, we're going to install mongoDB, run `brew install mongodb-community@4.2`
 
 When you have mongoDB installed, run `brew install redis` to install redis.
-
-and run `npm install redis-server` to install redis-server
 
 ### Installing the required dependencies
 
@@ -253,7 +251,7 @@ Then, copy the Client Secret and put it in `DISCORD_CLIENT_SECRET=` **make sure 
 
 Here comes the hard part, on the side bar navigate to the "OAuth2" tab.
 
-Then, you'll see redirects. Click on Add Redirect. type `http://localhost:3000/auth/discord` Then add another redirect, type `http://localhost:4000/auth/discord` **MAKE SURE TO SAVE THIS**
+Then, you'll see redirects. Click on Add Redirect. type `http://localhost:3000/auth/discord` **MAKE SURE TO SAVE THIS**
 
 Now, go back to your .env file and as `DISCORD_CALLBACK_URL=` put `http://localhost:3000/auth/discord` **make sure theres no spaces between the = sign and ANY of the .env values.**
 
@@ -267,11 +265,11 @@ To start MongoDB and Redis, make sure your cd'd into your cryb api folder, and f
 
 If no errors formulate, redis is running.
 
-To start mongoDB, create a folder in cryb api folder called "data" and inside of that create a folder called "db"
+To start mongoDB, create a folder inside your Cryb folder called "data"
 
-then run `cd`
+then run `cd data`
 
-run `mongod --dbpath <path to your cryb/api/data/db folder>` and a long thing of logs should formulate and mongodb is started, don't close the window.
+run `mongod --dbpath <path to your cryb/data folder>` and a long thing of logs should formulate and mongodb is started, don't close the window.
 
 
 ### Running the API
