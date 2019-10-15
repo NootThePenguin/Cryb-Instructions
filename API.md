@@ -161,7 +161,7 @@ Here your going to want to paste all the redirect URLS you made (with commas and
 
 Your all set with the .env file it should look like this (My client-id, secret-client is random and should be different from yours):
 
-![img16](https://i.imgur.com/3hmVkbU.png)
+![img16](https://i.imgur.com/kNP2kZi.png)
 
 -------------------------------------------------------------------------------------
 #### Wrapping things up with the powershell
