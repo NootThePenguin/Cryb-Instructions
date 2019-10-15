@@ -113,7 +113,7 @@ For now close your powershell.
 -------------------------------------------------------------------------------------
 #### Editting your .env file
 
-Rename your .env.example to .env in your powershell prompt by typing ren ".env.example" ".env"
+Rename your .env.example to .env in your powershell prompt by typing `ren ".env.example" ".env"`
 
 ![img11-5](https://i.imgur.com/KIWP2R9.png)
 
@@ -176,7 +176,7 @@ Now type `yarn dev` and press enter this should appear
 
 ![img18](https://i.imgur.com/NeRqPqB.png)
 
-Head over to here to setup the web server now
+Head over here to setup the web server now
 
 [Click here for web server instructions](https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Web-Installation.md)
 
