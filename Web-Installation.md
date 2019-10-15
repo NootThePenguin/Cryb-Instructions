@@ -32,6 +32,8 @@ Your web server is now running! Head over to your browser and type this url loca
 
 This should appear: ![img5](https://i.imgur.com/XJUEl9t.png)
 
+That's it for now, we have to wait for portals to work. For now you got the Front-End working only locally (no one can connect besides you) I'll be updating this guide on how you can invite your friends soon. 
+
 
 
 
