@@ -5,7 +5,7 @@ Open up the web folder which you should have if not download from here and put i
 
 https://github.com/crybapp/web
 
-![img1](https://imgur.com/e9cRdXe)
+![img1](https://i.imgur.com/e9cRdXe.png)
 
 
 Rename your .env.example to .env in your powershell prompt by typing ren ".env.example" ".env"
