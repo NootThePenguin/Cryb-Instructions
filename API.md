@@ -59,8 +59,6 @@ Make a new folder on your desktop call it redis-server
 
 Drag the files onto that new folder
 
-![img5](https://i.imgur.com/PU9iCf7.png)
-
 Click on the 64bit (assuming you have a 64 bit computer) and click redis-server.exe and allow access
 
 ![img6](https://i.imgur.com/NRJbua3.png)
@@ -130,8 +128,7 @@ Set `NODE_ENV=` to development so it should look like `NODE_ENV=development`
 Set `JWT_KEY=` to anything example, "km93m8c928ma90!mif" so `JWT_KEY=km93m8c928ma90!mif` (make it something complicated) or get something from random.org
 
 Set `MONGO_URI=` to `MONGO_URI=mongodb://localhost:27017/cryb`
-
-Leave `REDIS_URI=` blank as it should connect to localhost 
+Set `REDIS_URI=` to `REDIS_URI=redis://localhost:6379`
 
 Now onto the discord stuff!
 
