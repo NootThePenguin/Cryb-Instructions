@@ -1,17 +1,4 @@
-# CrybAPI-Instructions 
-Windows and Mac (Unix coming soon..)
-
-https://github.com/crybapp
-
-Cryb was created by William
-
-Windows guide by Noot
-
-Mac guide by lolaustin
-
-
-I apologies in advanced if the instructions are unclear but if you need help feel free to contact me on discord Noot#0420
-## Windows (scroll down for mac)
+## CrybAPI-Instructions Windows (scroll down for mac)
 -------------------------------------------------------------------------------------
 #### Installing NPM (nodejs)
 
