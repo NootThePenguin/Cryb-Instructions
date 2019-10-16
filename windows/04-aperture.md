@@ -1,9 +1,7 @@
-Setting up Aperture
--
+## Instructions for Aperture
+-------------------------------------------------------------------------------------
 
-Download the Cryb Aperture files
-
-[Github Click Here](https://github.com/crybapp/aperture)
+Download the Cryb Aperture files [here](https://github.com/crybapp/aperture).
 
 Move the folder to the cryb folder you've made before it should look like this
 
@@ -31,7 +29,7 @@ A new folder should appear now called node_modules don't touch it
 
 Time to edit your favorite file .env!
 
-Rename your .env.example to .env in your powershell prompt by typing ren ".env.example" ".env"
+Rename your .env.example to .env in your powershell prompt by typing `ren ".env.example" ".env"`
 
 ![img7](https://i.imgur.com/Xq3Dl1d.png)
 
@@ -57,7 +55,4 @@ Now type `yarn start` in powershell and press enter
 
 ![img11](https://i.imgur.com/LxZ3Z1k.png)
 
-Your not done yet! You still need two more things (portal and inviting friends). Wait for the next guide which should come out soon!
-
-If you had any issues with these set up steps feel free to contact me on discord Noot#0420 or ask in the cryb discord under #Tech-Support (Don't be afraid to ask!)
-
+_More coming soon._ Feel free to ask in the [Cryb Discord server](https://discord.gg/ShTATH4) meanwhile!
