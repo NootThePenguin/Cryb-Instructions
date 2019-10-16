@@ -61,6 +61,6 @@ The end result should be this
 
 ![img12](https://i.imgur.com/m8WKggm.png)
 
-Your not done yet! You still need two more things (portal and aperture), and configure a couple things in order to invite your friends. Wait for the next guide which should come out soon!
+Head over here to setup the Aperature now
 
-If you had any issues with these set up steps feel free to contact me on discord `Noot#0420` or ask in the cryb discord under `#Tech-Support`
+[Click here for Aperature instructions](https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Aperature-Installation.md)
