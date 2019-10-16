@@ -1,6 +1,10 @@
 # CrybAPI-Instructions (Windows)
 Windows guide by Noot
 
+[Cryb created by William](https://github.com/crybapp)
+
+I apologies in advanced if the instructions are unclear but if you need help feel free to contact me on discord Noot#0420 (Don't hesitate to ping me to message me) or you could always head over and as at #tech-support in Cryb discord.
+
 ##### Step 1 (API) 
 [Click here to head over to the API Instructions](https://github.com/NootThePenguin/Cryb-Instructions/blob/master/API.md)
 
