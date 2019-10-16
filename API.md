@@ -106,8 +106,6 @@ You should now have a new folder in your api folder called "node_modules" don't 
 ![img11](https://i.imgur.com/wVnEoho.png)
 
 
-For now close your powershell.
-
 -------------------------------------------------------------------------------------
 #### Editting your .env file
 
