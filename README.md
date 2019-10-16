@@ -13,7 +13,7 @@ Windows guide by Noot
 [Click here to head over to the Portals Instructions](https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Portals-Installation.md)
 
 ##### Step 4 (Aperature)
-Coming later tonight...
+[Click here to head over to the Aperature Instructions](https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Aperature-Installation.md)
 
 ##### Step 5 (Portal)
 Coming soon...
