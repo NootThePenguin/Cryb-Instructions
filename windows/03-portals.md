@@ -1,9 +1,7 @@
-Setting up Portals
--
+## Instructions for Portals
+-------------------------------------------------------------------------------------
 
-Download the Cryb Portals files 
-
-[Github Click Here](https://github.com/crybapp/portals)
+Download the Cryb Portals files [here](https://github.com/crybapp/portals)
 
 Move the folder to the cryb folder you've made before it should look like this
 
@@ -31,7 +29,7 @@ A new folder should appear now called `node_modules` don't touch it
 
 Now we are going to be editting your .env file!
 
-Rename your .env.example to .env in your powershell prompt by typing ren ".env.example" ".env"
+Rename your .env.example to .env in your powershell prompt by typing `ren ".env.example" ".env"`
 
 ![img7](https://i.imgur.com/QAolmTO.png)
 
@@ -61,6 +59,4 @@ The end result should be this
 
 ![img12](https://i.imgur.com/m8WKggm.png)
 
-Head over here to setup the Aperature now
-
-[Click here for Aperature instructions](https://github.com/NootThePenguin/Cryb-Instructions/blob/master/Aperature-Installation.md)
+Head over [here](04-aperture.md) to setup the aperture server now.
