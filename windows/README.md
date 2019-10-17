@@ -12,5 +12,5 @@ If something is amiss, [mention in the Cryb Discord server](https://discord.gg/S
 * [Step 2 - Web](02-web.md)
 * [Step 3 - Portals](03-portals.md)
 * [Step 4 - Aperture](04-aperture.md)
-* [Step 5 - Portal](windows/05-portal.md)
+* [Step 5 - Portal](05-portal.md)
 * ~~Step 6 - Inviting your friends!~~ - Coming soon...
