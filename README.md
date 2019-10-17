@@ -22,7 +22,7 @@ Cryb is brought to you by [William Gibson](https://github.com/williamsthing) and
 * [Step 2 - Web](windows/02-web.md)
 * [Step 3 - Portals](windows/03-portals.md)
 * [Step 4 - Aperture](windows/04-aperture.md)
-* ~~Step 5 - Portal~~ - Coming soon...
+* [Step 5 - Portal](windows/05-portal.md)
 * ~~Step 6 - Inviting your friends!~~ - Coming soon...
 
 ### Mac OS
