@@ -18,6 +18,10 @@ Open it up and it should install after clicking on yes/ok
 ![img3](https://i.imgur.com/7NM3pJ0.png)
 ![img4](https://i.imgur.com/mLQa3rp.png)
 
+##### `IF FOR WHATEVER REASON YOU CAN'T USE THIS DOCKER PLEASE FOLLOW THIS GUIDE LINKED BELOW IF THE DOCKER ABOVE WORKS FOR YOU, YOU CAN CONTINUE WITH THE GUIDE`
+
+[Install Docker ToolBox Instructions](https://docs.docker.com/toolbox/toolbox_install_windows/#step-2-install-docker-toolbox)
+
 Upon clicking `Close and logout` you'll be logged out of your computer so you'll have to resign in
 
 ![img5](https://i.imgur.com/ZEJOy6G.png)
@@ -33,6 +37,8 @@ Click the little up arrow bottom right of your task bar
 It should say the Docker Desktop is running
 
 ![img8](https://i.imgur.com/P7V0lyA.png)
+
+
 
 Thats it for dockers for now!
 
