@@ -1,12 +1,13 @@
-![Cryb logo](.github/cryb.png) Cryb's Unofficial Install Instructions
----
+![Cryb logo](.github/cryb.png)
+
+_**Unofficial Install Instructions**_
 
 This is a guide made so people can easily install a full [Cryb](https://cryb.app) instance, explaining everything step-by-step.
 
-If there's something amiss or you simply need help, feel free to [mention us in the Cryb Discord server!](https://discord.gg/ShTATH4)
+If there's something amiss or you simply need help, feel free to mention us in the [Cryb Discord server](https://discord.gg/ShTATH4)!
 There's also people willing to help in the #tech-support channel.
 
-Cryb is brought to you by [William Gibson](https://github.com/williamsthing) and the rest of the engineering team.
+Cryb is brought to you by [@williamsthing](https://github.com/williamsthing) and the rest of the [Cryb Engineering](https://github.com/orgs/crybapp/people) team.
 
 ## Supported platforms
 
@@ -35,4 +36,4 @@ Cryb is brought to you by [William Gibson](https://github.com/williamsthing) and
 
 ### Linux
 
-Coming soon...
+*Coming soon...*
