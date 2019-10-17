@@ -97,6 +97,10 @@ Set `PORTALS_KEY=` to `PORTALS_KEY=portals-portal-key`
 
 Set `APERTURE_URL=` to `APERTURE_URL=http://host.docker.internal:9000`
 
+##### `IGNORE THIS IF YOU DIDN'T DOWNLOAD DOCKER TOOL`
+##### `IF YOU'RE USING DOCKER TOOL PORTALS_WS_URL=<YOUR IP> AND APERTURE_URL=<YOUR IP>`
+##### [CLICK HERE TO GET YOUR IP](https://whatismyipaddress.com/
+
 Set `APERTURE_KEY=` to `APERTURE_KEY=api-aperture-key`
 
 Set `VIDEO_WIDTH=` to `VIDEO_WIDTH=1280`
