@@ -55,4 +55,4 @@ Now type `yarn start` in powershell and press enter
 
 ![img11](https://i.imgur.com/LxZ3Z1k.png)
 
-_More coming soon._ Feel free to ask in the [Cryb Discord server](https://discord.gg/ShTATH4) meanwhile!
+Head over [here](05-portal.md) to setup the portal now.
