@@ -73,7 +73,8 @@ Here your going to want to paste all the redirect URLS you made (with commas and
 `DISCORD_OAUTH_ORIGINS=http://localhost:3000`
 
 You should have a file that looks similar to this:
-<image>
+
+![envExample](https://i.imgur.com/HgWf1Ii.png)
 
 Now you can save the environment file and close TextEdit
 
@@ -99,6 +100,6 @@ npm install && yarn
 After that's complete, run the API using the command `yarn dev`
 If everything is in order, you should see a very friendly house in the terminal window.
 
-<image>
+![apiRunning](https://i.imgur.com/8PZwtd2.png)
 
 _More coming soon._ Feel free to ask in the [Cryb Discord server](https://discord.gg/ShTATH4) meanwhile!
