@@ -3,91 +3,100 @@
 We will be using the Terminal to do all the things related to Cryb. You can open this by searching for "Terminal" in Spotlight.
 
 ### Installing programs that is needed to run Cryb
-
 In this case, it's Node.js, yarn, MongoDB, and Redis. We will be installing these tools using Homebrew.
 
 #### Installing Homebrew
-
 If you don't already have Homebrew installed, you will need to install it in order to get all the other programs. You can do that by running this command in your terminal program of choice.
-```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+```
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
  
 #### Installing the programs
- 
 We will now install all the necessary programs by running these commands in the terminal. Specifically:
-     - Node.js `brew install node`.
-     - Yarn `brew install yarn`.
-     - MongoDB `brew tap mongodb/brew && brew install mongodb-community@4.2`.
-     - Redis `brew install redis`.
+     * Node.js `brew install node`.
+     * Yarn `brew install yarn`.
+     * MongoDB `brew tap mongodb/brew && brew install mongodb-community@4.2`.
+     * Redis `brew install redis`.
  
 ### Installing the Cryb API
-
 This is where the fun begins! 
  
 We need a folder to house all of Cryb's source code. For this particular guide, we will be creating a folder named `cryb` on our Desktop.
- 
 In the command line/terminal, navigate to your Desktop, and make a new folder called `cryb`
-```cd ~/Desktop
-   mkdir cryb
-   cd cryb```
-
+```
+cd ~/Desktop
+mkdir cryb
+cd cryb
+```
 After that, we can now download the API by running `git clone https://github.com/crybapp/api.git`. When that's done, a new folder called `api` should appear in your `cryb` folder.
 
 <image goes here>
 
-### Installing the required dependencies
+### Editing your Environment file
+The environment file will have all the necessary information for the API to function correctly. 
+Start by going in to the `api` folder, and making a copy of your example environment file:
+```
+cd api
+cp .env.example .env
+```
+Now that you have a copy, you can start editing the file in TextEdit by running `open -a TextEdit .env` in the terminal.
+Let's start editing:
+    * Set `NODE_ENV=` to `development` so it should look like `NODE_ENV=development`
+    * Set `JWT_KEY=` to something complicated, like `JWT_KEY=jiwriouwrehasflkwejrf`
+    * Set `MONGO_URI=` to `MONGO_URI=mongodb://localhost:27017/cryb`
+    * Set `REDIS_URI=` to `REDIS_URI=redis://localhost:6379`
 
-Make sure you're still cd'd into your api folder, then run `yarn`
+Now onto the discord stuff! (Courtesy of NootThePenguin's Windows guide)
 
-### Editing your ENV
+Head over to https://discordapp.com/developers/applications and click on New Application and name it whatever you want
 
-To edit your ENV, go into finder and find your `cryb/api` folder.
+![img14](https://i.imgur.com/tZ1m6Ba.png)
 
-When you're in the API folder, you'll see a file called `.env.example`. Rename it to just `.env`
+Make sure you are on the General Information tab and get your "CLIENT ID" from there, click copy.
+Paste it into `DISCORD_CLIENT_ID=<Your client ID here>`
+  
+Get your client secret (DO NOT SHARE!!) from the same page and click copy
+Paste it into `DISCORD_CLIENT_SECRET=<Your client secret here> `
+  
+For now set DISCORD_CALLBACK_URL to
+`DISCORD_CALLBACK_URL=http://localhost:3000/auth/discord`
 
-Double click on your `.env` file. a TextEdit window should open up.
+We will set this up right now
 
-When you're in the file, the first thing you'll see is `NODE_ENV=` make it `NODE_ENV=development`
+Head over to the OAuth2 tab and make these Redirects
 
-Then, you'll see `PORTALS_API_KEY=api-portals-key, APERTURE_WS_KEY=api-aperture-key,` and `APERTURE_WS_KEY=api-aperture-key` 
-Make sure to **NOT** touch these values. 
+![img15](https://i.imgur.com/ZpZOdka.png)
 
-Then, youll see `MONGO_URI=` change it to `MONGO_URI=mongodb://localhost:27017/cryb`
+Now for the last line! 
+`DISCORD_OAUTH_ORIGINS=`
+Here your going to want to paste all the redirect URLS you made (with commas and no spaces so heres an example)
+`DISCORD_OAUTH_ORIGINS=http://localhost:3000`
 
-Then, you'll see `REDIS_URI=` **DO NOT** touch this value. Leave it blank.
+You should have a file that looks similar to this:
+<image>
 
-Then you'll see many things discord-related. You'll want to go to discordapp.com and go to the developer portal.
-In the developer portal, create an app and make the name "Cryb" and a logo of your choice. When it's created, copy the ID and put it in `DISCORD_CLIENT_ID=` 
-
-Then, copy the Client Secret and put it in `DISCORD_CLIENT_SECRET=` **make sure theres no spaces between the = sign and ANY of the .env values.**
-
-Here comes the hard part, on the side bar navigate to the "OAuth2" tab.
-
-Then, you'll see redirects. Click on Add Redirect. type `http://localhost:3000/auth/discord` **MAKE SURE TO SAVE THIS**
-
-Now, go back to your .env file and as `DISCORD_CALLBACK_URL=` put `http://localhost:3000/auth/discord` **make sure theres no spaces between the = sign and ANY of the .env values.**
-
-**SAVE YOUR .ENV**
+Now you can save the environment file and close TextEdit
+**REMEMBER TO SAVE YOUR .ENV FILE**
 
 ### Starting MongoDB and Redis
+Make sure you're still in Cryb's API folder. If you're lost, simply navigate back to it using `cd ~/Desktop/cryb/api`
 
-make sure you cd'd into cryb api folder
-
-To start MongoDB and Redis, make sure your cd'd into your cryb api folder, and first run `redis-server --daemonize yes --port 6379` to start redis
-
-If no errors formulate, redis is running.
-
-To start mongoDB, create a folder inside your Cryb folder called "data"
-
-then run `cd data`
-
-run `mongod --dbpath <path to your cryb/data folder>` and a long thing of logs should formulate and mongodb is started, don't close the window.
+Start Redis using this command: `redis-server --daemonize yes --port 6379`
+In order to start MongoDB, we would need to setup some folders:
+    * Make a folder called `data`: `mkdir data`
+    * Run MongoDB: `mongod --dbpath ~/Desktop/cryb/api/data`
+    * You should see a bunch of text scrolling. Don't panic, this means that MongoDB is now running. Keep that terminal window open.
 
 ### Running the API
+It's the final ~~countdown~~ stretch. It's time to start up the API
+In a separate terminal window, navigate to the API folder and install the API: 
+```
+cd ~/Desktop/cryb/api
+npm install && yarn
+```
+After that's complete, run the API using the command `yarn dev`
+If everything is in order, you should see a very friendly house in the terminal window.
 
-To run your api, make sure you cd'd into cryb api folder, and run the command `yarn dev`
-
-**make a new terminal window to not disrupt mongodb running**
-
-Now, you have the Cryb API up and running!
+<image>
 
 _More coming soon._ Feel free to ask in the [Cryb Discord server](https://discord.gg/ShTATH4) meanwhile!
