@@ -1,40 +1,38 @@
 ## Instructions for API
 -------------------------------------------------------------------------------------
-### Installing Node.js/npm
+We will be using the Terminal to do all the things related to Cryb. You can open this by searching for "Terminal" in Spotlight.
 
-Follow the installer on [this link](https://nodejs.org/dist/v12.12.0/node-v12.12.0.pkg).
+### Installing programs that is needed to run Cryb
 
-### Installing Homebrew (skip if already installed)
+In this case, it's Node.js, yarn, MongoDB, and Redis. We will be installing these tools using Homebrew.
 
-Run `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"` in terminal/your command line of choice.
+#### Installing Homebrew
+
+If you don't already have Homebrew installed, you will need to install it in order to get all the other programs. You can do that by running this command in your terminal program of choice.
+```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
  
+#### Installing the programs
  
-### Installing yarn
+We will now install all the necessary programs by running these commands in the terminal. Specifically:
+     - Node.js `brew install node`.
+     - Yarn `brew install yarn`.
+     - MongoDB `brew tap mongodb/brew && brew install mongodb-community@4.2`.
+     - Redis `brew install redis`.
  
-Run `brew install yarn`.
+### Installing the Cryb API
+
+This is where the fun begins! 
  
+We need a folder to house all of Cryb's source code. For this particular guide, we will be creating a folder named `cryb` on our Desktop.
  
-### Installing the Cryb API on your machine
- 
-Create a folder wherever you desire, and call it "Cryb"
- 
-In the command line/terminal, run `cd {path to your folder}`.
+In the command line/terminal, navigate to your Desktop, and make a new folder called `cryb`
+```cd ~/Desktop
+   mkdir cryb
+   cd cryb```
 
-Then in the command line/terminal, run `git clone https://github.com/crybapp/api.git`.
+After that, we can now download the API by running `git clone https://github.com/crybapp/api.git`. When that's done, a new folder called `api` should appear in your `cryb` folder.
 
-When that is done, you should see a new folder called api in your cryb folder.
-
-
-### Installing MongoDB and Redis (databases)
-
-If you're already cd'd into your cryb folder, run `cd api`.
-If you aren't, run `cd {path to your cryb folder}/api`.
-
-Now, we're going to "tap" mongoDB, run `brew tap mongodb/brew`
-
-Now, we're going to install mongoDB, run `brew install mongodb-community@4.2`
-
-When you have mongoDB installed, run `brew install redis` to install Redis.
+<image goes here>
 
 ### Installing the required dependencies
 
