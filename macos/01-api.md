@@ -13,10 +13,11 @@ If you don't already have Homebrew installed, you will need to install it in ord
  
 #### Installing the programs
 We will now install all the necessary programs by running these commands in the terminal. Specifically:
-     * Node.js `brew install node`.
-     * Yarn `brew install yarn`.
-     * MongoDB `brew tap mongodb/brew && brew install mongodb-community@4.2`.
-     * Redis `brew install redis`.
+
+* Node.js `brew install node`.
+* Yarn `brew install yarn`.
+* MongoDB `brew tap mongodb/brew && brew install mongodb-community@4.2`.
+* Redis `brew install redis`.
  
 ### Installing the Cryb API
 This is where the fun begins! 
@@ -30,8 +31,6 @@ cd cryb
 ```
 After that, we can now download the API by running `git clone https://github.com/crybapp/api.git`. When that's done, a new folder called `api` should appear in your `cryb` folder.
 
-<image goes here>
-
 ### Editing your Environment file
 The environment file will have all the necessary information for the API to function correctly. 
 Start by going in to the `api` folder, and making a copy of your example environment file:
@@ -41,10 +40,11 @@ cp .env.example .env
 ```
 Now that you have a copy, you can start editing the file in TextEdit by running `open -a TextEdit .env` in the terminal.
 Let's start editing:
-    * Set `NODE_ENV=` to `development` so it should look like `NODE_ENV=development`
-    * Set `JWT_KEY=` to something complicated, like `JWT_KEY=jiwriouwrehasflkwejrf`
-    * Set `MONGO_URI=` to `MONGO_URI=mongodb://localhost:27017/cryb`
-    * Set `REDIS_URI=` to `REDIS_URI=redis://localhost:6379`
+
+* Set `NODE_ENV=` to `development` so it should look like `NODE_ENV=development`
+* Set `JWT_KEY=` to something complicated, like `JWT_KEY=jiwriouwrehasflkwejrf`
+* Set `MONGO_URI=` to `MONGO_URI=mongodb://localhost:27017/cryb`
+* Set `REDIS_URI=` to `REDIS_URI=redis://localhost:6379`
 
 Now onto the discord stuff! (Courtesy of NootThePenguin's Windows guide)
 
@@ -76,6 +76,7 @@ You should have a file that looks similar to this:
 <image>
 
 Now you can save the environment file and close TextEdit
+
 **REMEMBER TO SAVE YOUR .ENV FILE**
 
 ### Starting MongoDB and Redis
@@ -83,9 +84,10 @@ Make sure you're still in Cryb's API folder. If you're lost, simply navigate bac
 
 Start Redis using this command: `redis-server --daemonize yes --port 6379`
 In order to start MongoDB, we would need to setup some folders:
-    * Make a folder called `data`: `mkdir data`
-    * Run MongoDB: `mongod --dbpath ~/Desktop/cryb/api/data`
-    * You should see a bunch of text scrolling. Don't panic, this means that MongoDB is now running. Keep that terminal window open.
+
+* Make a folder called `data`: `mkdir data`
+* Run MongoDB: `mongod --dbpath ~/Desktop/cryb/api/data`
+* You should see a bunch of text scrolling. Don't panic, this means that MongoDB is now running. Keep that terminal window open.
 
 ### Running the API
 It's the final ~~countdown~~ stretch. It's time to start up the API
