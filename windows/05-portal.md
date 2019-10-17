@@ -175,4 +175,4 @@ Head back to your browser for a surprise!
 
 Grats you got it working! Currently there is no sound but there will be a fix for that very soon!
 
-Inviting your friends guide coming real soon!
+Inviting your friends guide coming soon!
