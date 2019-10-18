@@ -121,9 +121,7 @@ Head over to the OAuth2 tab and make these Redirects
 ![img15](https://i.imgur.com/ZpZOdka.png)
 
 Now for the last line! 
-`DISCORD_OAUTH_ORIGINS=`
-Here your going to want to paste all the redirect URLS you made (with commas and no spaces so heres an example)
-`DISCORD_OAUTH_ORIGINS=http://localhost:3000`
+Set `DISCORD_OAUTH_ORIGINS=` to`DISCORD_OAUTH_ORIGINS=http://localhost:3000`
 
 Your all set with the .env file it should look like this (My client-id, secret-client is random and should be different from yours):
 
