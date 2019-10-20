@@ -62,19 +62,19 @@ In this case I'm going to rename api-master and web-master folder to api and web
 
 Open up the api folder
 
-![img9](https://i.imgur.com/pRDaiHT.png)
+![img9](https://i.imgur.com/967QrrJ.png)
 
 Shift + Right click and click Open PowerShell window here
 
-![img10](https://i.imgur.com/XnTQnZm.png)
+![img10](https://i.imgur.com/gcEC8X5.png)
 
 Type `npm install` in Windows PowerShell
 
-![img10-5](https://i.imgur.com/9yr6j98.png)
+![img10-5](https://i.imgur.com/dj8jJs2.png)
 
-You should now have a new folder in your api folder called "node_modules" don't touch it
+You should now have a new folder in your api folder called `node_modules` don't touch it
 
-![img11](https://i.imgur.com/wVnEoho.png)
+![img11](https://i.imgur.com/LPrAClV.png)
 
 
 -------------------------------------------------------------------------------------
@@ -86,17 +86,20 @@ Rename your .env.example to .env in your powershell prompt by typing `ren ".env.
 
 Your file should now be renamed to .env
 
-![img12](https://i.imgur.com/EKpEnBE.png)
+![img12](https://i.imgur.com/7rdGtB5.png)
 
 Now open your .env file with notepad++ or notepad doesn't matter
 
-![img13](https://i.imgur.com/DHbJ57m.png)
+![img13](https://i.imgur.com/NpzVD1s.png)
 
 Set `NODE_ENV=` to development so it should look like `NODE_ENV=development`
+
+Leave `PORT=4000` as default
 
 Set `JWT_KEY=` to anything example, "km93m8c928ma90!mif" so `JWT_KEY=km93m8c928ma90!mif` (make it something complicated) or get something from random.org
 
 Set `MONGO_URI=` to `MONGO_URI=mongodb://localhost:27017/cryb`
+
 Set `REDIS_URI=` to `REDIS_URI=redis://localhost:6379`
 
 Now onto the discord stuff!
@@ -109,10 +112,7 @@ Make sure you are on the General Information tab and get your "CLIENT ID" from t
 Paste it into `DISCORD_CLIENT_ID=<Your client ID here>`
   
 Get your client secret (DO NOT SHARE!!) from the same page and click copy
-Paste it into `DISCORD_CLIENT_SECRET=<Your client secret here> `
-  
-For now set DISCORD_CALLBACK_URL to
-`DISCORD_CALLBACK_URL=http://localhost:3000/auth/discord`
+Paste it into `DISCORD_CLIENT_SECRET=<Your client secret here> `  
 
 We will set this up right now
 
@@ -120,12 +120,9 @@ Head over to the OAuth2 tab and make these Redirects
 
 ![img15](https://i.imgur.com/ZpZOdka.png)
 
-Now for the last line! 
-Set `DISCORD_OAUTH_ORIGINS=` to`DISCORD_OAUTH_ORIGINS=http://localhost:3000`
-
 Your all set with the .env file it should look like this (My client-id, secret-client is random and should be different from yours):
 
-![img16](https://i.imgur.com/bkMMeEV.png)
+![img16](https://i.imgur.com/owkfb9u.png)
 
 -------------------------------------------------------------------------------------
 #### Wrapping things up with the powershell
