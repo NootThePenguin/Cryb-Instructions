@@ -86,7 +86,7 @@ Your file should now be renamed .env
 
 Open your .env file with notepad++ or notepad doesn't matter
 
-![img17](https://i.imgur.com/kYRFyKv.png)
+![img17](https://i.imgur.com/HM9EpyB.png)
 
 
 Set `NODE_ENV=` to development so it should look like `NODE_ENV=development`
@@ -95,13 +95,13 @@ Set `PORTALS_WS_URL=` to `PORTALS_WS_URL=ws://host.docker.internal:1337`
 
 Set `PORTALS_KEY=` to `PORTALS_KEY=portals-portal-key`
 
-Set `APERTURE_URL=` to `APERTURE_URL=http://host.docker.internal:9000`
+Set `STREAMING_URL=` to `STREAMING_URL=http://host.docker.internal:9000`
 
 ##### `IGNORE THIS IF YOU DIDN'T DOWNLOAD DOCKER TOOL`
 ##### `IF YOU'RE USING DOCKER TOOL PORTALS_WS_URL=<YOUR IP> AND APERTURE_URL=<YOUR IP>`
 ##### [CLICK HERE TO GET YOUR IP](https://whatismyipaddress.com/)
 
-Set `APERTURE_KEY=` to `APERTURE_KEY=api-aperture-key`
+Set `STREAMING_KEY=` to `STREAMING_KEY=portal-streaming-key`
 
 Set `VIDEO_WIDTH=` to `VIDEO_WIDTH=1280`
 
@@ -109,7 +109,7 @@ Set `VIDEO_HEIGHT=` to `VIDEO_HEIGHT=720`
 
 Your .env file should look something like this
 
-![img18](https://i.imgur.com/uo4Nozy.png)
+![img18](https://i.imgur.com/RKX7KGr.png)
 
 Getting Portal to work
 -
