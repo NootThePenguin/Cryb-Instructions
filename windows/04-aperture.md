@@ -1,5 +1,6 @@
 ## Instructions for Aperture
 -------------------------------------------------------------------------------------
+#### Setting up Aperture
 
 Download the Cryb Aperture files [here](https://github.com/crybapp/aperture).
 
@@ -13,21 +14,21 @@ In this case I'm going to rename aperture-master to aperture for simplicity
 
 Open your aperture folder it should look like this
 
-![img3](https://i.imgur.com/QKsNdV2.png)
+![img3](https://i.imgur.com/AOZ8qht.png)
 
 Reopen your powershell prompt do this by Shift+Right clicking on the folder
 
-![img4](https://i.imgur.com/zj8mYhP.png)
+![img4](https://i.imgur.com/vpXNGsZ.png)
 
 Type in `npm install` in the powershell and press enter
 
-![img5](https://i.imgur.com/5FBoE8m.png)
+![img5](https://i.imgur.com/Rv304KQ.png)
 
 A new folder should appear now called node_modules don't touch it
 
-![img6](https://i.imgur.com/IRHPPwM.png)
+![img6](https://i.imgur.com/Q2DppbT.png)
 
-Time to edit your favorite file .env!
+#### Editting your .env file
 
 Rename your .env.example to .env in your powershell prompt by typing `ren ".env.example" ".env"`
 
@@ -50,6 +51,8 @@ For now leave as is `APERTURE_KEY=api-aperture-key` we will edit this step 6 may
 Your .env file should look something like this
 
 ![img10](https://i.imgur.com/sdeHSCc.png)
+
+#### Wrapping things up with Powershell
 
 Now type `yarn start` in powershell and press enter
 
