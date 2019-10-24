@@ -183,6 +183,6 @@ Head back to your browser for a surprise!
 
 ![img33](https://i.imgur.com/oKIhRwQ.png)
 
-Grats you got it working! Currently there is no sound but there will be a fix for that very soon!
+Grats you got it working! Currently there is sound with minor distortion (at times) but will soon get fixed!
 
 _More coming soon._ Feel free to ask in the [Cryb Discord server](https://discord.gg/ShTATH4) meanwhile!
